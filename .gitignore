@@ -1,0 +1,5 @@
+thesis_environment/
+*.log
+*.pkl
+*.csv
+**/.ipynb_checkpoints
