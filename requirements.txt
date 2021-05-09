@@ -1,0 +1,8 @@
+pandas==0.24.1
+numpy==1.19.5
+seaborn==0.11.1
+scipy==1.2.1
+matplotlib==3.0.3
+scikit-learn==0.24.0
+scikit-optimize==0.8.1
+tune-sklearn==0.2.1
