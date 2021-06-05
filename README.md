@@ -63,7 +63,7 @@ Correlation analysis is also applied to capture linear relationships between fea
 ## rrf_feature_selection
 In this step feature importance values of tree based model [regularized random forest](https://arxiv.org/pdf/1201.1587.pdf) is used. 
 
-Mutual information is calculated between two variables X and Y however there may be cases where two variables $X_1$ and $X_2$ explain the variable Y but neither X1 nor X2 can individually explain the target Y. One such example is $Y = XOR(X_1,X_2)$. Conditional mutual information $I(Y;X_1,X_2)$ is needed in such cases. Random forest feature importance overcomes this by considering all the features (for the given tree) to make a split.
+Mutual information is calculated between two variables X and Y however there may be cases where two variables $X_1$ and $X_2$ explain the variable Y but neither $X_1$ nor $X_2$ can individually explain the target Y. One such example is $Y = XOR(X_1,X_2)$. Conditional mutual information $I(Y;X_1,X_2)$ is needed in such cases. Random forest feature importance overcomes this by considering all the features (for the given tree) to make a split.
 
 Using regularized random forest over standard random forest, like other regularization methods, gives sparse results. Trees in standard random forest greedily divide the feature space for decreasing the entropy resulting with redundant features in the end. 
 
