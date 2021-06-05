@@ -53,7 +53,7 @@ In this step enriched (feature engineered) data is divided into training and tes
 3) Build train and test sets using the data of the marked simulation runs
 
 ## mutual_information_and_correlation_feature_selection
-Feature selection is an important step in machine learning model building. Relevant features are selected and others are dicarded. This step decreases the dimensionality of features, lowers the computation times and improves the model convergence. In this step [mutual information](#https://arxiv.org/pdf/1907.07384.pdf) between features and target is calculated for the training set. Mutual information is usefull since it can capture non-linear relationships between two random variables (i.e. feature and target) compared to correlation analysis which captures linear dependence. Mutual information between two random variables X and Y gives the reduction in entropy (uncertainty) of Y after observing the value of X.
+Feature selection is an important step in machine learning model building. Relevant features are selected and others are dicarded. This step decreases the dimensionality of features, lowers the computation times and improves the model convergence. In this step [mutual information](https://arxiv.org/pdf/1907.07384.pdf) between features and target is calculated for the training set. Mutual information is usefull since it can capture non-linear relationships between two random variables (i.e. feature and target) compared to correlation analysis which captures linear dependence. Mutual information between two random variables X and Y gives the reduction in entropy (uncertainty) of Y after observing the value of X.
 
 $$ 
     I(X;Y) = H(Y) - H(Y|X) = \iint{p(x,y) log(\frac{p(x,y)}{p(x)(y)})dxdy}
@@ -61,7 +61,7 @@ $$
 $$
 Correlation analysis is also applied to capture linear relationships between features and target.
 ## rrf_feature_selection
-In this step feature importance values of tree based model [regularized random forest](#https://arxiv.org/pdf/1201.1587.pdf) is used. 
+In this step feature importance values of tree based model [regularized random forest](https://arxiv.org/pdf/1201.1587.pdf) is used. 
 
 Mutual information is calculated between two variables X and Y however there may be cases where two variables $X_1$ and $X_2$ explain the variable Y but neither X1 nor X2 can individually explain the target Y. One such example is $Y = XOR(X_1,X_2)$. Conditional mutual information $I(Y;X_1,X_2)$ is needed in such cases. Random forest feature importance overcomes this by considering all the features (for the given tree) to make a split.
 
