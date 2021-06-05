@@ -1,0 +1,158 @@
+{
+    "Linear Model": {
+        "best_runs": [
+            {
+                "parameters": {
+                    "classifier": "Ridge(alpha=1.2297906572240958), classifier__alpha= 0.6340098197336863"
+                },
+                "neg_mean_squared_error": -486.91515678672675
+            },
+            {
+                "parameters": {
+                    "classifier": "Ridge(alpha=1.2297906572240958), classifier__alpha= 0.8824071824103497"
+                },
+                "neg_mean_squared_error": -465.3297506161033
+            },
+            {
+                "parameters": {
+                    "classifier": "Ridge(alpha=1.2297906572240958), classifier__alpha= 1.0861453982307545"
+                },
+                "neg_mean_squared_error": -535.3445015393897
+            },
+            {
+                "parameters": {
+                    "classifier": "Ridge(alpha=1.2297906572240958), classifier__alpha= 0.5439783250482388"
+                },
+                "neg_mean_squared_error": -467.9969117282368
+            },
+            {
+                "parameters": {
+                    "classifier": "Ridge(alpha=1.2297906572240958), classifier__alpha= 1.2297906572240958"
+                },
+                "neg_mean_squared_error": -473.5754374401242
+            }
+        ],
+        "Max_score": -465.3297506161033,
+        "Mean_score": -485.8323516221161,
+        "Std_score": 25.850790958652468
+    },
+    "Random Forest": {
+        "best_runs": [
+            {
+                "parameters": {
+                    "classifier__n_jobs": 5,
+                    "classifier__n_estimators": 1000,
+                    "classifier__min_samples_leaf": 10,
+                    "classifier__max_features": 0.3333333333333333,
+                    "classifier": "RandomForestRegressor(max_features='sqrt', n_estimators=1500, n_jobs=5)"
+                },
+                "score": -335.88801771360033
+            },
+            {
+                "parameters": {
+                    "classifier__n_jobs": 5,
+                    "classifier__n_estimators": 100,
+                    "classifier__min_samples_leaf": 10,
+                    "classifier__max_features": 0.3333333333333333,
+                    "classifier": "RandomForestRegressor(max_features='sqrt', n_estimators=1500, n_jobs=5)"
+                },
+                "score": -299.64264474579295
+            },
+            {
+                "parameters": {
+                    "classifier__n_jobs": 5,
+                    "classifier__n_estimators": 100,
+                    "classifier__min_samples_leaf": 10,
+                    "classifier__max_features": 0.3333333333333333,
+                    "classifier": "RandomForestRegressor(max_features='sqrt', n_estimators=1500, n_jobs=5)"
+                },
+                "score": -338.3768682649488
+            },
+            {
+                "parameters": {
+                    "classifier__n_jobs": 5,
+                    "classifier__n_estimators": 1500,
+                    "classifier__min_samples_leaf": 1,
+                    "classifier__max_features": "sqrt",
+                    "classifier": "RandomForestRegressor(max_features='sqrt', n_estimators=1500, n_jobs=5)"
+                },
+                "score": -354.2370663444475
+            },
+            {
+                "parameters": {
+                    "classifier__n_jobs": 5,
+                    "classifier__n_estimators": 1500,
+                    "classifier__min_samples_leaf": 1,
+                    "classifier__max_features": "sqrt",
+                    "classifier": "RandomForestRegressor(max_features='sqrt', n_estimators=1500, n_jobs=5)"
+                },
+                "score": -359.83680429577817
+            }
+        ],
+        "Max_score": -299.64264474579295,
+        "Mean_score": -337.59628027291353,
+        "Std_score": 21.050237994856726
+    },
+    "XGBoost": {
+        "best_runs": [
+            {
+                "parameters": {
+                    "classifier__reg_alpha": 0,
+                    "classifier__n_jobs": 6,
+                    "classifier__n_estimators": 500,
+                    "classifier__min_child_weight": 50,
+                    "classifier__learning_rate": 0.01,
+                    "classifier": "XGBRegressor"
+                },
+                "score": -342.6366551680196
+            },
+            {
+                "parameters": {
+                    "classifier__reg_alpha": 0.05,
+                    "classifier__n_jobs": 6,
+                    "classifier__n_estimators": 500,
+                    "classifier__min_child_weight": 100,
+                    "classifier__learning_rate": 0.01,
+                    "classifier": "XGBRegressor"
+                },
+                "score": -333.7463126804548
+            },
+            {
+                "parameters": {
+                    "classifier__reg_alpha": 0,
+                    "classifier__n_jobs": 6,
+                    "classifier__n_estimators": 500,
+                    "classifier__min_child_weight": 10,
+                    "classifier__learning_rate": 0.01,
+                    "classifier": "XGBRegressor"
+                },
+                "score": -370.75661962672416
+            },
+            {
+                "parameters": {
+                    "classifier__reg_alpha": 0,
+                    "classifier__n_jobs": 6,
+                    "classifier__n_estimators": 1000,
+                    "classifier__min_child_weight": 100,
+                    "classifier__learning_rate": 0.01,
+                    "classifier": "XGBRegressor"
+                },
+                "score": -313.4451710100176
+            },
+            {
+                "parameters": {
+                    "classifier__reg_alpha": 0,
+                    "classifier__n_jobs": 6,
+                    "classifier__n_estimators": 1500,
+                    "classifier__min_child_weight": 200,
+                    "classifier__learning_rate": 0.01,
+                    "classifier": "XGBRegressor"
+                },
+                "score": -325.7741799771977
+            },
+        ],
+        "Max_score": -313.4451710100176,
+        "Mean_score": -337.2717876924828,
+        "Std_score": 19.299468347405888
+    }
+}

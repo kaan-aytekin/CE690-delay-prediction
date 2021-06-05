@@ -1,3 +1,4 @@
+.vscode/*
 thesis_environment/
 *.log
 *.pkl
