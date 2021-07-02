@@ -4,3 +4,4 @@ thesis_environment/
 *.pkl
 *.csv
 **/.ipynb_checkpoints
+docs/*.txt
