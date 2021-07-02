@@ -57,7 +57,6 @@ Feature selection is an important step in machine learning model building. Relev
 
 $$ 
     I(X;Y) = H(Y) - H(Y|X) = \iint{p(x,y) log(\frac{p(x,y)}{p(x)(y)})dxdy}
-
 $$
 Correlation analysis is also applied to capture linear relationships between features and target.
 ## rrf_feature_selection

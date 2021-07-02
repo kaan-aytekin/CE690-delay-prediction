@@ -1,6 +1,7 @@
 time_after_accident_started
 distance_to_accident
 is_accident_timestamp
+connected_vehicle_ratio
 flow_vehph
 density_vehpkm
 avg_speed_kmph

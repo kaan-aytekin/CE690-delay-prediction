@@ -1,7 +1,10 @@
+time_after_accident_started
+distance_to_accident
+is_accident_timestamp
+connected_vehicle_ratio
 accident_lane_1
 accident_lane_2
 accident_lane_3
-accident_lane
 section_travel_time_sec
 delay_time_sec
 avg_speed_kmph
